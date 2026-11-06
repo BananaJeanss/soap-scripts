@@ -20,6 +20,8 @@ end
 findMrKeef()
 
 part.Name = "bangbang"
+part.BrickColor = BrickColor.random()
+part.Material = Enum.Material.SmoothPlastic
 part.Transparency = 0.5
 part.CanCollide = false
 
@@ -40,7 +42,7 @@ part.Size = Vector3.new(10, 10, 0.1)
 local function spinit()
 	randSpeed = math.random(5, 67)
 	while task.wait(0.1) do
-		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(randspeed), 0)
+		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(randSpeed), 0)
 	end
 end
 print("spinning it")
