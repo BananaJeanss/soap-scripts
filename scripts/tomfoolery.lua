@@ -2,8 +2,7 @@
 
 local part = Instance.new("Part")
 part.Parent = workspace
-
-local f
+part.Anchored = true
 
 local randVector = Vector3.new
-part.Position = Vector3.new(1,1,1)
+part.Position = Vector3.new(math.random(),math.random(),math.random())
