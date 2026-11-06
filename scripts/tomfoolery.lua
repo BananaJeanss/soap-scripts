@@ -3,6 +3,11 @@
 local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
+part.Name = "bangbang"
+
+-- if more than 5 bangbangs just remove a random one
+for i, _ in pairs(workspace:GetChildren()) do
+	if i.Name = 
 
 local bangbang = "rbxassetid://10307385384"
 local chief1 = Instance.new("Decal")
