@@ -41,5 +41,4 @@ local function spinit()
 		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(1), 0)
 	end
 end
-
-coroutine.create(spinit)
+spawn(spinit)
