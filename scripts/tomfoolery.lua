@@ -12,6 +12,7 @@ for _, v in pairs(workspace:GetChildren()) do
 end
 part.Name = "bangbang"
 part.Transparency = 0.5
+part.CanCollide = false
 
 local bangbang = "rbxassetid://10307385384"
 local chief1 = Instance.new("Decal")
