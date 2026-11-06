@@ -22,7 +22,7 @@ findMrKeef()
 part.Name = "bangbang"
 part.BrickColor = BrickColor.random()
 part.Material = Enum.Material.Foil
-part.Transparency = math.random(0, 0.7)
+part.Transparency = math.random() * 0.7
 part.CanCollide = false
 
 local bangbang = "rbxasset://textures/face.png"
