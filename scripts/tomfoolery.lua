@@ -5,7 +5,7 @@ part.Parent = workspace
 part.Anchored = true
 
 local bangbang = "rbxassetid://10307385384"
-local chief1 = Instance.new("Image")
+local chief1 = Instance.new("Decal")
 local chief2 = chief1:Clone()
 chief1.Parent = part
 chief2.Parent = part
