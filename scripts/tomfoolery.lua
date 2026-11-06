@@ -62,11 +62,13 @@ spawn(oofit)
 script.Parent = part
 
 local isSpecial = false
+local debounce = false
 local function touchevent(touch)
 	local char = touch.Parent
 	local humanoid = char:FindFirstChild("Humanoid")
 
-	if humanoid then
+	if humanoid and not debounce then
+		debounce = true
 		randEvent = math.random(1, 4)
 		if randEvent == 1 then
 			for _, part in pairs(humanoid:GetChildren()) do
@@ -78,8 +80,13 @@ local function touchevent(touch)
 				end
 			end
 		end
+		task.wait(2)
+		debounce = false
 	end
 end
 if math.random(0,1) == 1 then
-
+	sparkles = Instance.new("Sparkles")
+	sparkles.parent = part
+	sparkles.SparkleColor = Color3.New()
+	part.Touched:Connect(touchevent)
 end
