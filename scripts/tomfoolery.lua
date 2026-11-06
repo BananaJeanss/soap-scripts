@@ -81,7 +81,7 @@ local function touchevent(touch)
 					end
 				end
 			end
-		else if randEvent == 2 then
+		elseif randEvent == 2 then
 			explodes = Instance.new("Explosion")
 			explodes.Parent = char
 		end
