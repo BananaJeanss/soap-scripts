@@ -87,6 +87,9 @@ local function touchevent(touch)
 			explodes = Instance.new("Explosion")
 			explodes.Parent = workspace
 			explodes.Position = touch.Position
+		elseif randEvent == 3 then
+			local rootPart = char:WaitForChild("HumanoidRootPart")
+			rootPart.CFrame = CFrame.new(0, 100000000, 0)
 		end
 		task.wait(2)
 		debounce = false
