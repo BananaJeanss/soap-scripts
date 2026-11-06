@@ -83,7 +83,8 @@ local function touchevent(touch)
 			end
 		elseif randEvent == 2 then
 			explodes = Instance.new("Explosion")
-			explodes.Parent = char
+			explodes.Parent = workspace
+			explodes.Position = char.Position
 		end
 		task.wait(2)
 		debounce = false
