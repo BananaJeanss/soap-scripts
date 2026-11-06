@@ -61,3 +61,18 @@ spawn(oofit)
 
 script.Parent = part
 
+local isSpecial = false
+local function touchevent(touch)
+	local char = touch.Parent
+	local humanoid = char:FindFirstChild("Humanoid")
+
+	if humanoid then
+		randEvent = math.random(1, 4)
+		if randEvent == 1 then
+			for _, part in pairs()
+		end
+	end
+end
+if math.random(0,1) == 1 then
+
+end
