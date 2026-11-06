@@ -9,7 +9,7 @@ local function findMrKeef()
 	for _, v in pairs(workspace:GetChildren()) do
 		if v.Name == "bangbang" then
 			count = count + 1
-			if count => 5 then
+			if count >= 5 then
 				v:Destroy()
 				print("delete bang bang")
 				return
