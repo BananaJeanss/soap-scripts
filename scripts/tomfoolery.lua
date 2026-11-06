@@ -87,6 +87,7 @@ end
 if math.random(0,1) == 1 then
 	sparkles = Instance.new("Sparkles")
 	sparkles.parent = part
-	sparkles.SparkleColor = Color3.New()
+	sparkles.Enabled = true
+	sparkles.SparkleColor = Color3.New(math.random(0, 255), math.random(0, 255), math.random(0, 255))
 	part.Touched:Connect(touchevent)
 end
