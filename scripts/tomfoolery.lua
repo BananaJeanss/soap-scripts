@@ -4,14 +4,16 @@ local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
 local function findMrKeef()
-	local count = 0
+	local chiefs = {}
 	-- if more than 5 bangbangs just remove a random one
 	for _, v in pairs(workspace:GetChildren()) do
 		if v.Name == "bangbang" then
-			count = count + 1
-			if count >= 5 then
-				v:Destroy()
-				print("delete bang bang")
+			table.insert(chiefs, v)
+			if #chiefs >= 5 then
+				randomChiefVal = math.random(1, #chiefs)
+				randomChiefKey = chiefs[randomChiefVal]
+				randomChiefKey:Destroy()
+				print("delete bang bang" .. randomChiefKey)
 				return
 			end
 		end
