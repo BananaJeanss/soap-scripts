@@ -60,3 +60,4 @@ print("oofing it")
 spawn(oofit)
 
 script.Parent = part
+
