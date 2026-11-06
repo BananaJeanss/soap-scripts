@@ -3,11 +3,14 @@
 local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
-part.Name = "bangbang"
-
 -- if more than 5 bangbangs just remove a random one
-for i, _ in pairs(workspace:GetChildren()) do
-	if i.Name = 
+for _, v in pairs(workspace:GetChildren()) do
+	if v.Name == "bangbang" do
+		v:Destroy()
+		return
+	end
+end
+part.Name = "bangbang"
 
 local bangbang = "rbxassetid://10307385384"
 local chief1 = Instance.new("Decal")
@@ -16,6 +19,8 @@ chief1.Parent = part
 chief2.Parent = part
 chief1.Face = Enum.NormalId.Front
 chief2.Face = Enum.NormalId.Back
+chief1.Texture = bangbang
+chief2.Texture = bangbang
 
 local randVector = Vector3.new
 part.Position = Vector3.new(math.random(0, 100),math.random(0, 10),math.random(0,100))
