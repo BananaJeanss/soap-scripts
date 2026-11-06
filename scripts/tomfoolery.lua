@@ -22,7 +22,7 @@ findMrKeef()
 part.Name = "bangbang"
 part.BrickColor = BrickColor.random()
 part.Material = Enum.Material.Foil
-part.Transparency = math.random(0.5, 1)
+part.Transparency = math.random(0, 0.7)
 part.CanCollide = false
 
 local bangbang = "rbxasset://textures/face.png"
@@ -71,7 +71,8 @@ local function touchevent(touch)
 		debounce = true
 		randEvent = math.random(1, 4)
 		if randEvent == 1 then
-			for _, part in pairs(humanoid:GetChildren()) do
+			for _, part in pairs(char:GetChildren()) do
+				if part:
 				for _, side in pairs(Enum.NormalId:GetEnumItems()) do
 					smile = Instance.new("Decal")
 					smile.Parent = part
