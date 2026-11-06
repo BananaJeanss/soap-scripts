@@ -2,7 +2,7 @@
 
 local part = Instance.new("Part")
 local PartTypes = Enum.PartType:GetEnumItems()
-part.Shape = Enum.PartType.
+part.Shape = PartTypes[math.random(#PartTypes)]
 part.Parent = workspace
 part.Anchored = true
 local function findMrKeef()
