@@ -8,9 +8,10 @@ local function findMrKeef()
 	-- if more than 5 bangbangs just remove a random one
 	for _, v in pairs(workspace:GetChildren()) do
 		if v.Name == "bangbang" then
-			count += 1
+			count = count + 1
 			if count > 5 then
 				v:Destroy()
+				print("delete bang bang")
 				return
 			end
 		end
@@ -41,6 +42,7 @@ local function spinit()
 		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(1), 0)
 	end
 end
+print("spinning it")
 spawn(spinit)
 
 thevoices = Instance.new("Sound")
@@ -51,4 +53,5 @@ local function oofit()
 		thevoices:Play()
 	end
 end
+print("oof ")
 spawn(oofit)
