@@ -21,7 +21,7 @@ findMrKeef()
 
 part.Name = "bangbang"
 part.BrickColor = BrickColor.random()
-part.Material = Enum.Material.SmoothPlastic
+part.Material = Enum.Material.Foil
 part.Transparency = 0.5
 part.CanCollide = false
 
