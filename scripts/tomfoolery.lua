@@ -38,8 +38,9 @@ part.Position = Vector3.new(math.random(0, 100),math.random(10,10),math.random(0
 part.Size = Vector3.new(10, 10, 0.1)
 
 local function spinit()
+	randSpeed = math.random(5, 67)
 	while task.wait(0.1) do
-		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(1), 0)
+		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(randspeed), 0)
 	end
 end
 print("spinning it")
