@@ -101,7 +101,7 @@ local function touchevent(touch)
 		debounce = false
 	end
 end
-if math.random(0,1) == 1 then
+if math.random(0,3) == 3 then
 	sparkles = Instance.new("Sparkles")
 	sparkles.Parent = part
 	sparkles.Enabled = true
