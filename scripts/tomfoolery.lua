@@ -3,13 +3,17 @@
 local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
--- if more than 5 bangbangs just remove a random one
-for _, v in pairs(workspace:GetChildren()) do
-	if v.Name == "bangbang" then
-		v:Destroy()
-		return
+local function findMrKeef()
+	-- if more than 5 bangbangs just remove a random one
+	for _, v in pairs(workspace:GetChildren()) do
+		if v.Name == "bangbang" then
+			v:Destroy()
+			return
+		end
 	end
 end
+findMrKeef()
+
 part.Name = "bangbang"
 part.Transparency = 0.5
 part.CanCollide = false
