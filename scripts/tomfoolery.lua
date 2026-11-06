@@ -7,9 +7,9 @@ local function findMrKeef()
 	local count = 0
 	-- if more than 5 bangbangs just remove a random one
 	for _, v in pairs(workspace:GetChildren()) do
-		count += 1
-		if count > 5 then
-			if v.Name == "bangbang" then
+		if v.Name == "bangbang" then
+			count += 1
+			if count > 5 then
 				v:Destroy()
 				return
 			end
@@ -42,3 +42,13 @@ local function spinit()
 	end
 end
 spawn(spinit)
+
+thevoices = Instance.new("Sound")
+thevoices.SoundId = "rbxasset://sounds/uuhhh.mp3"
+thevoices.Parent = part
+local function oofit()
+	while task.wait(math.random(5, 30)) do
+		thevoices:Play()
+	end
+end
+spawn(oofit)
