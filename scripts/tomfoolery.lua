@@ -29,9 +29,13 @@ chief1.Texture = bangbang
 chief2.Texture = bangbang
 
 local randVector = Vector3.new
-part.Position = Vector3.new(math.random(0, 100),math.random(0, 10),math.random(0,100))
+part.Position = Vector3.new(math.random(0, 100),math.random(10,10),math.random(0,100))
 part.Size = Vector3.new(10, 10, 0.1)
 
-while task.wait(0.1) do
-	part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(1), 0)
+local function spinit()
+	while task.wait(0.1) do
+		part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(1), 0)
+	end
 end
+
+coroutine.create(spinit)
