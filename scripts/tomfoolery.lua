@@ -38,7 +38,7 @@ chief1.Texture = bangbang
 chief2.Texture = bangbang
 
 local randVector = Vector3.new
-part.Position = Vector3.new(math.random(-100, 100),math.random(10,10),math.random(-100,100))
+part.Position = Vector3.new(math.random(-50, 50),math.random(10,10),math.random(-100,100))
 part.Size = Vector3.new(10, 10, 0.1)
 
 local function spinit()
