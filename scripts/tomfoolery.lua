@@ -8,7 +8,7 @@ local function findMrKeef()
 	-- if more than 5 bangbangs just remove a random one
 	for _, v in pairs(workspace:GetChildren()) do
 		count += 1
-		if count > 5 do
+		if count > 5 then
 			if v.Name == "bangbang" then
 				v:Destroy()
 				return
