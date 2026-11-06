@@ -72,12 +72,13 @@ local function touchevent(touch)
 		randEvent = math.random(1, 4)
 		if randEvent == 1 then
 			for _, part in pairs(char:GetChildren()) do
-				if part:
-				for _, side in pairs(Enum.NormalId:GetEnumItems()) do
-					smile = Instance.new("Decal")
-					smile.Parent = part
-					smile.Texture = "rbxasset://textures/face.png"
-					smile.Face = side
+				if part:IsA("BasePart") then
+					for _, side in pairs(Enum.NormalId:GetEnumItems()) do
+						smile = Instance.new("Decal")
+						smile.Parent = part
+						smile.Texture = "rbxasset://textures/face.png"
+						smile.Face = side
+					end
 				end
 			end
 		end
