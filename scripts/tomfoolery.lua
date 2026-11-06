@@ -9,7 +9,7 @@ local function findMrKeef()
 	for _, v in pairs(workspace:GetChildren()) do
 		if v.Name == "bangbang" then
 			count = count + 1
-			if count > 5 then
+			if count => 5 then
 				v:Destroy()
 				print("delete bang bang")
 				return
@@ -22,7 +22,7 @@ findMrKeef()
 part.Name = "bangbang"
 part.BrickColor = BrickColor.random()
 part.Material = Enum.Material.Foil
-part.Transparency = 0.5
+part.Transparency = math.random(0.5, 1)
 part.CanCollide = false
 
 local bangbang = "rbxasset://textures/face.png"
@@ -36,7 +36,7 @@ chief1.Texture = bangbang
 chief2.Texture = bangbang
 
 local randVector = Vector3.new
-part.Position = Vector3.new(math.random(0, 100),math.random(10,10),math.random(0,100))
+part.Position = Vector3.new(math.random(-100, 100),math.random(10,10),math.random(-100,100))
 part.Size = Vector3.new(10, 10, 0.1)
 
 local function spinit()
