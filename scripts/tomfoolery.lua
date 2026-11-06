@@ -4,11 +4,15 @@ local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
 local function findMrKeef()
+	local count = 0
 	-- if more than 5 bangbangs just remove a random one
 	for _, v in pairs(workspace:GetChildren()) do
-		if v.Name == "bangbang" then
-			v:Destroy()
-			return
+		count += 1
+		if count > 5 do
+			if v.Name == "bangbang" then
+				v:Destroy()
+				return
+			end
 		end
 	end
 end
