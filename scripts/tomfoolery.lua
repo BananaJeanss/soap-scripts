@@ -13,7 +13,7 @@ local function findMrKeef()
 				randomChiefVal = math.random(1, #chiefs)
 				randomChiefKey = chiefs[randomChiefVal]
 				randomChiefKey:Destroy()
-				print("delete bang bang" .. randomChiefKey)
+				print("delete bang bang" .. randomChiefKey.Name)
 				return
 			end
 		end
