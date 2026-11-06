@@ -10,9 +10,9 @@ spawnP2.BrickColor = BrickColor.new("Really Red")
 local base = Instance.new("Part")
 base.Anchored = true
 base.Size = Vector3.new(15,1,12)
-base.Position = Vector3.new(20,2,20)
-spawnP.Position = Vector3.new(15,3,20)
-spawnP2.Position = Vector3.new(25,3,20)
+base.Position = Vector3.new(20,2,-20)
+spawnP.Position = Vector3.new(15,3,-20)
+spawnP2.Position = Vector3.new(25,3,-20)
 
 -- create folder if not exists
 if not workspace:FindFirstChild("SpawnStands") then
