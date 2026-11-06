@@ -1,6 +1,8 @@
 -- spinning brick or sumn
 
 local part = Instance.new("Part")
+local PartTypes = Enum.PartType:GetEnumItems()
+part.Shape = Enum.PartType.
 part.Parent = workspace
 part.Anchored = true
 local function findMrKeef()
@@ -90,6 +92,10 @@ local function touchevent(touch)
 		elseif randEvent == 3 then
 			local rootPart = char:WaitForChild("HumanoidRootPart")
 			rootPart.CFrame = CFrame.new(0, 1000000, 0)
+		elseif randEvent == 4 then
+			imonfire = Instance.new("Fire")
+			local rootP = char:WaitForChild("HumanoidRootPart")
+			imonfire.Parent = rootP
 		end
 		task.wait(2)
 		debounce = false
