@@ -4,7 +4,13 @@ local part = Instance.new("Part")
 part.Parent = workspace
 part.Anchored = true
 
-local chiefkeefbangbang = Instance.new("Image")
+local bangbang = "rbxassetid://10307385384"
+local chief1 = Instance.new("Image")
+local chief2 = chief1:Clone()
+chief1.Parent = part
+chief2.Parent = part
+chief1.Face = Enum.Normalid.Front
+chief2.Face = Enum.Noramlid.Back
 
 local randVector = Vector3.new
 part.Position = Vector3.new(math.random(0, 100),math.random(0, 10),math.random(0,100))
