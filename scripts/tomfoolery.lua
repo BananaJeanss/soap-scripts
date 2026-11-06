@@ -69,7 +69,14 @@ local function touchevent(touch)
 	if humanoid then
 		randEvent = math.random(1, 4)
 		if randEvent == 1 then
-			for _, part in pairs()
+			for _, part in pairs(humanoid:GetChildren()) do
+				for _, side in pairs(Enum.NormalId:GetEnumItems()) do
+					smile = Instance.new("Decal")
+					smile.Parent = part
+					smile.Texture = "rbxasset://textures/face.png"
+					smile.Face = side
+				end
+			end
 		end
 	end
 end
