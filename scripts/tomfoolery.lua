@@ -18,7 +18,7 @@ part.Name = "bangbang"
 part.Transparency = 0.5
 part.CanCollide = false
 
-local bangbang = "rbxassetid://10307385384"
+local bangbang = "rbxasset://textures/face.png"
 local chief1 = Instance.new("Decal")
 local chief2 = chief1:Clone()
 chief1.Parent = part
