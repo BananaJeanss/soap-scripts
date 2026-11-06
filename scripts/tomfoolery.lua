@@ -53,5 +53,7 @@ local function oofit()
 		thevoices:Play()
 	end
 end
-print("oof ")
+print("oofing it")
 spawn(oofit)
+
+script.Parent = part
